@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4577101594445511529}
   - component: {fileID: 4314431227298249920}
+  - component: {fileID: 1905292413}
+  - component: {fileID: 6788269006628473713}
   m_Layer: 0
   m_Name: Cactus
   m_TagString: Untagged
@@ -45,6 +47,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   starCost: 100
+--- !u!114 &1905292413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4577101594445511528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb665113ffdcfcc418ec75046110d8f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile: {fileID: 5609936202696424515, guid: 75bcfa7ae4131e240aeecfef2ef1076d, type: 3}
+  gun: {fileID: 3912459755637898618}
+--- !u!95 &6788269006628473713
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4577101594445511528}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 344e62e6225effe4092f204394c996fb, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &6187313267006581637
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -100,10 +135,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Body
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7175951408298551005, guid: 8000fff6d25413648835f9fded791f35, type: 3}
+    - {fileID: 7663122174731099709, guid: 8000fff6d25413648835f9fded791f35, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8000fff6d25413648835f9fded791f35, type: 3}
 --- !u!4 &4577101593789937081 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7663122174731099708, guid: 8000fff6d25413648835f9fded791f35, type: 3}
+  m_PrefabInstance: {fileID: 6187313267006581637}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3912459755637898618 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7175951408904263423, guid: 8000fff6d25413648835f9fded791f35, type: 3}
   m_PrefabInstance: {fileID: 6187313267006581637}
   m_PrefabAsset: {fileID: 0}
