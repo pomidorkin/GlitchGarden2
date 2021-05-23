@@ -201,6 +201,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1319962025}
     m_Modifications:
+    - target: {fileID: 1867091062, guid: 620462bdcc866af428fa89af68cc66a4, type: 3}
+      propertyPath: maxSpawnDelay
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1867091062, guid: 620462bdcc866af428fa89af68cc66a4, type: 3}
+      propertyPath: minSpawnDelay
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 371185943964329625, guid: 620462bdcc866af428fa89af68cc66a4, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -407,7 +415,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 273ce6fef68bedc42bf81bc16abcb21c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stars: 100
+  stars: 1000
 --- !u!114 &1159922444
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -730,6 +738,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1319962025}
     m_Modifications:
+    - target: {fileID: 1867091062, guid: 620462bdcc866af428fa89af68cc66a4, type: 3}
+      propertyPath: maxSpawnDelay
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1867091062, guid: 620462bdcc866af428fa89af68cc66a4, type: 3}
+      propertyPath: minSpawnDelay
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 371185943964329625, guid: 620462bdcc866af428fa89af68cc66a4, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -915,6 +931,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1319962025}
     m_Modifications:
+    - target: {fileID: 1867091062, guid: 620462bdcc866af428fa89af68cc66a4, type: 3}
+      propertyPath: maxSpawnDelay
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1867091062, guid: 620462bdcc866af428fa89af68cc66a4, type: 3}
+      propertyPath: minSpawnDelay
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 371185943964329625, guid: 620462bdcc866af428fa89af68cc66a4, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -972,6 +996,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1319962025}
     m_Modifications:
+    - target: {fileID: 1867091062, guid: 620462bdcc866af428fa89af68cc66a4, type: 3}
+      propertyPath: maxSpawnDelay
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1867091062, guid: 620462bdcc866af428fa89af68cc66a4, type: 3}
+      propertyPath: minSpawnDelay
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 371185943964329625, guid: 620462bdcc866af428fa89af68cc66a4, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -1029,6 +1061,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1319962025}
     m_Modifications:
+    - target: {fileID: 1867091062, guid: 620462bdcc866af428fa89af68cc66a4, type: 3}
+      propertyPath: maxSpawnDelay
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1867091062, guid: 620462bdcc866af428fa89af68cc66a4, type: 3}
+      propertyPath: minSpawnDelay
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 371185943964329625, guid: 620462bdcc866af428fa89af68cc66a4, type: 3}
       propertyPath: m_RootOrder
       value: 0

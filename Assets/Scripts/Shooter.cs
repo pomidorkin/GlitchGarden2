@@ -8,10 +8,12 @@ public class Shooter : MonoBehaviour
     [SerializeField] GameObject projectile, gun;
 
     AttackerSpawner myLaneSpawner;
+    Animator animator;
 
     private void Start()
     {
         SetLaneSpawner();
+        animator = GetComponent<Animator>();
     }
 
     private void SetLaneSpawner()
@@ -31,13 +33,19 @@ public class Shooter : MonoBehaviour
     {
         if (IsAttackerInLane())
         {
-            Debug.Log("Sooting");
-            // TODO change animation state to shooting
+            /* 
+             * On "Animator" we have a bool parameter "IsAttacking"
+             * On animation transition (from idle to attack) we have a condition IsAttacking.
+             * If the condition is true, the idle animation changes to the attacking animation.
+             * On the transition from attack to idle if the condition is false the animation
+             * changes to the idle animation~
+             * We can change the condition state using the code below.
+            */
+            animator.SetBool("IsAttacking", true);
         }
         else
         {
-            Debug.Log("Sit and wait");
-            // TODO change animation state to idle
+            animator.SetBool("IsAttacking", false);
         }
     }
 
