@@ -63,9 +63,10 @@
     <Compile Include="Assets\Scripts\Defender.cs" />
     <Compile Include="Assets\Scripts\LevelLoader.cs" />
     <Compile Include="Assets\Scripts\AttackerSpawner.cs" />
+    <Compile Include="Assets\Scripts\StarDisplay.cs" />
     <Compile Include="Assets\Scripts\DefenderSpawner.cs" />
     <Compile Include="Assets\Scripts\DefenderButton.cs" />
-    <Compile Include="Assets\Scripts\StarDisplay.cs" />
+    <Compile Include="Assets\Scripts\Lizard.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
