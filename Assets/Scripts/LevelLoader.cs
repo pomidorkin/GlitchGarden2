@@ -13,7 +13,9 @@ public class LevelLoader : MonoBehaviour
     {
         // Whenever this script is called it gets the index of a snece which it was called from
         currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        if(currentSceneIndex == 0)
+        Debug.Log("Start: " + currentSceneIndex);
+
+        if (currentSceneIndex == 0)
         {
             StartCoroutine(WaitForTime());
         }
@@ -25,6 +27,23 @@ public class LevelLoader : MonoBehaviour
         LoadNextScene();
     }
 
+    public void RestartScene()
+    {
+        Time.timeScale = 1;
+        Debug.Log("Restart Scene: " + currentSceneIndex);
+        SceneManager.LoadScene(currentSceneIndex);
+    }
+
+    public void LoadMainMenu()
+    {
+        // Resuming if the game was paused
+        Time.timeScale = 1;
+
+        // String reference loads a scene with this name.
+        // The scene should be added to the 'Build Settings'
+        SceneManager.LoadScene("Start Screen");
+    }
+
     public void LoadNextScene()
     {
         // Loading next scene: Current scene index + 1
@@ -34,5 +53,10 @@ public class LevelLoader : MonoBehaviour
     public void LoadYouLose()
     {
         SceneManager.LoadScene("Lose Screen");
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 }
