@@ -7,5 +7,6 @@ public class DamageCollider : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         FindObjectOfType<Lives>().TakeLife();
+        collision.GetComponent<Health>().DealDamage(1000);
     }
 }
