@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement; // Required to load scenes
@@ -35,6 +35,16 @@ public class LevelLoader : MonoBehaviour
     }
 
     public void LoadMainMenu()
+    {
+        // Resuming if the game was paused
+        Time.timeScale = 1;
+
+        // String reference loads a scene with this name.
+        // The scene should be added to the 'Build Settings'
+        SceneManager.LoadScene("Options Screen"); // У меня перепутаны имена Start Screen и Options Screen
+    }
+
+    public void LoadOptionsScreen()
     {
         // Resuming if the game was paused
         Time.timeScale = 1;
